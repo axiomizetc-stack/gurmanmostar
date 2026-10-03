@@ -322,6 +322,32 @@ h1 { font-size: clamp(2.6rem, 5vw, 4.4rem); font-weight: 800; max-width: 11ch; }
 .towns { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 0; margin: 0; }
 .towns li { background: rgba(255, 255, 255, 0.12); border-radius: 999px; padding: 0.45rem 0.85rem; font-weight: 600; }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 24px;
+}
+.gallery-grid img.gallery-wide { grid-column: 1 / -1; height: 460px; object-position: center 55%; }
+.reel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+.reel-grid .instagram-media {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 540px !important;
+  margin: 0 !important;
+}
+
 .banner { padding: 2rem 0 0; }
 .banner img { width: 100%; border-radius: 28px; height: auto; }
 .banner-actions { display: flex; justify-content: center; margin-top: -1.5rem; position: relative; }
@@ -422,7 +448,8 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(245, 197, 24
   }
   .nav.is-open { display: flex; }
   .nav.is-open .nav-cta { display: inline-flex; }
-  .hero, .about, .cards, .menu-grid, .step-row, .stats, .contact-card, .order-form, .years { grid-template-columns: 1fr; }
+  .hero, .about, .cards, .menu-grid, .step-row, .stats, .contact-card, .order-form, .years, .gallery-grid, .reel-grid { grid-template-columns: 1fr; }
+  .gallery-grid img.gallery-wide { height: 280px; }
   .years img { height: 320px; }
   .hero-visual { min-height: 0; }
   .hero-visual img { width: 100%; height: 320px; margin: 0; }
