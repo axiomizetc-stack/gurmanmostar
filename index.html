@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -246,40 +246,73 @@
         </div>
       </section>
 
-      <section class="section gallery" id="galerija">
-        <div class="section-head">
-          <p class="eyebrow" data-i18n="gallery.kicker">Proslave</p>
-          <h2 data-i18n="gallery.title">Gurman na stolu i u vili.</h2>
-          <p data-i18n="gallery.text">Slani zalogaji, salate i postavljen stol za proslavu. Ovako izgleda hrana kad izađe iz kuhinje.</p>
+      <section class="section album" id="galerija">
+        <div class="album-head">
+          <div>
+            <p class="eyebrow" data-i18n="gallery.kicker">Proslave</p>
+            <h2 data-i18n="gallery.title">Gurman na stolu i u vili.</h2>
+            <p data-i18n="gallery.text">Slani zalogaji, salate i postavljen stol za proslavu. Ovako izgleda hrana kad izađe iz kuhinje.</p>
+          </div>
+          <p class="album-stamp" aria-hidden="true">Album<br />Mostar</p>
         </div>
-        <div class="gallery-grid">
-          <img class="gallery-wide" src="images/villa.jpg" alt="Postavljen stol u vili, s lusterima i cvjetnim lukom" data-i18n-alt="gallery.villaAlt" />
-          <img src="images/buffet.jpg" alt="Ketering stol s pecivima, burgerima i cvijećem" data-i18n-alt="gallery.buffetAlt" />
-          <img src="images/stand.jpg" alt="Zlatni stalak sa slanim korpicama" data-i18n-alt="gallery.standAlt" />
-          <img src="images/salads.jpg" alt="Čaše sa salatom na drvenom postolju" data-i18n-alt="gallery.saladsAlt" />
-          <img src="images/bites.jpg" alt="Plata s piletinom, umacima i rolnicama" data-i18n-alt="gallery.bitesAlt" />
+        <div class="collage">
+          <figure class="shot shot-villa">
+            <img src="images/villa.jpg" alt="Postavljen stol u vili, s lusterima i cvjetnim lukom" data-i18n-alt="gallery.villaAlt" />
+            <figcaption data-i18n="gallery.capVilla">Vila</figcaption>
+          </figure>
+          <figure class="shot shot-buffet">
+            <img src="images/buffet.jpg" alt="Ketering stol s pecivima, burgerima i cvijećem" data-i18n-alt="gallery.buffetAlt" />
+            <figcaption data-i18n="gallery.capBuffet">Stol</figcaption>
+          </figure>
+          <figure class="shot shot-stand">
+            <img src="images/stand.jpg" alt="Zlatni stalak sa slanim korpicama" data-i18n-alt="gallery.standAlt" />
+            <figcaption data-i18n="gallery.capStand">Stalak</figcaption>
+          </figure>
+          <figure class="shot shot-salads">
+            <img src="images/salads.jpg" alt="Čaše sa salatom na drvenom postolju" data-i18n-alt="gallery.saladsAlt" />
+            <figcaption data-i18n="gallery.capSalads">Salate</figcaption>
+          </figure>
+          <figure class="shot shot-bites">
+            <img src="images/bites.jpg" alt="Plata s piletinom, umacima i rolnicama" data-i18n-alt="gallery.bitesAlt" />
+            <figcaption data-i18n="gallery.capBites">Plata</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section reels" id="instagram">
-        <div class="section-head">
-          <p class="eyebrow">Instagram</p>
-          <h2 data-i18n="reels.title">Pogledajte nas u pokretu.</h2>
-          <p data-i18n="reels.text">Četiri objave s profila @gurman_mostar. Za sve ostalo otvorite Instagram.</p>
+      <section class="section album album-reels" id="instagram">
+        <div class="album-head">
+          <div>
+            <p class="eyebrow">Instagram</p>
+            <h2 data-i18n="reels.title">Pogledajte nas u pokretu.</h2>
+            <p data-i18n="reels.text">Četiri objave s profila @gurman_mostar. Za sve ostalo otvorite Instagram.</p>
+          </div>
+          <a class="btn btn-yellow" href="https://www.instagram.com/gurman_mostar/" target="_blank" rel="noopener noreferrer">@gurman_mostar</a>
         </div>
-        <div class="reel-grid">
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DbJRrg8O8q6/" data-instgrm-version="14">
-            <a href="https://www.instagram.com/p/DbJRrg8O8q6/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          </blockquote>
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Dbd6sNuuQTK/" data-instgrm-version="14">
-            <a href="https://www.instagram.com/p/Dbd6sNuuQTK/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          </blockquote>
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DchK2KNuvt0/" data-instgrm-version="14">
-            <a href="https://www.instagram.com/p/DchK2KNuvt0/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          </blockquote>
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DdACGbmuFoY/" data-instgrm-version="14">
-            <a href="https://www.instagram.com/p/DdACGbmuFoY/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          </blockquote>
+        <div class="reel-album">
+          <article class="reel-page">
+            <span>01</span>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DbJRrg8O8q6/" data-instgrm-version="14">
+              <a href="https://www.instagram.com/p/DbJRrg8O8q6/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </blockquote>
+          </article>
+          <article class="reel-page">
+            <span>02</span>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Dbd6sNuuQTK/" data-instgrm-version="14">
+              <a href="https://www.instagram.com/p/Dbd6sNuuQTK/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </blockquote>
+          </article>
+          <article class="reel-page">
+            <span>03</span>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DchK2KNuvt0/" data-instgrm-version="14">
+              <a href="https://www.instagram.com/p/DchK2KNuvt0/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </blockquote>
+          </article>
+          <article class="reel-page">
+            <span>04</span>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DdACGbmuFoY/" data-instgrm-version="14">
+              <a href="https://www.instagram.com/p/DdACGbmuFoY/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </blockquote>
+          </article>
         </div>
       </section>
 

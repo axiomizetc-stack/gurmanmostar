@@ -322,29 +322,131 @@ h1 { font-size: clamp(2.6rem, 5vw, 4.4rem); font-weight: 800; max-width: 11ch; }
 .towns { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 0; margin: 0; }
 .towns li { background: rgba(255, 255, 255, 0.12); border-radius: 999px; padding: 0.45rem 0.85rem; font-weight: 600; }
 
-.gallery-grid {
+.album {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(245, 197, 24, 0.28), transparent 28%),
+    linear-gradient(180deg, #fff6df 0%, #fffdf8 100%);
+  border-radius: 36px;
+  padding: 2.4rem 1.4rem 2.8rem;
+  box-shadow: inset 0 0 0 1px rgba(28, 23, 18, 0.06);
+}
+.album-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+.album-head h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; }
+.album-head p { color: var(--muted); margin-top: 0.6rem; max-width: 38rem; }
+.album-stamp {
+  margin: 0;
+  width: 7.2rem;
+  height: 7.2rem;
+  border: 2px dashed var(--pomegranate);
+  color: var(--pomegranate);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 1.55rem;
+  line-height: 0.95;
+  transform: rotate(8deg);
+  flex: none;
+}
+.collage {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 0.95fr;
+  grid-template-rows: 250px 270px;
+  gap: 1.3rem 1rem;
+  padding: 0.8rem 0.4rem 0.2rem;
+}
+.shot {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  background: #fff;
+  padding: 0.65rem 0.65rem 2.35rem;
+  border-radius: 4px;
+  box-shadow: 0 16px 34px rgba(28, 23, 18, 0.16);
+  display: flex;
+  flex-direction: column;
+}
+.shot::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  width: 58px;
+  height: 16px;
+  transform: translateX(-50%) rotate(-3deg);
+  background: rgba(245, 197, 24, 0.78);
+}
+.shot img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  flex: 1;
+  object-fit: cover;
+  object-position: center 42%;
+}
+.shot figcaption {
+  position: absolute;
+  left: 0.8rem;
+  right: 0.8rem;
+  bottom: 0.35rem;
+  font-family: "Caveat", cursive;
+  font-size: 1.55rem;
+  line-height: 1;
+}
+.shot-villa { grid-row: 1 / span 2; transform: rotate(-2deg); }
+.shot-villa img { object-position: center 58%; }
+.shot-buffet { transform: rotate(2.2deg); }
+.shot-stand { transform: rotate(-1.4deg); }
+.shot-salads { transform: rotate(1.6deg); }
+.shot-bites { transform: rotate(-2.4deg); }
+.shot:hover { transform: rotate(0deg) translateY(-6px); z-index: 2; }
+
+.album-reels { margin-top: 1.2rem; }
+.reel-album {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.8rem;
+  gap: 1.6rem 1.2rem;
+  padding-top: 0.6rem;
 }
-.gallery-grid img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  object-position: center 40%;
-  border-radius: 24px;
+.reel-page {
+  position: relative;
+  background: #fff;
+  padding: 2.2rem 0.7rem 1.1rem;
+  border-radius: 6px;
+  box-shadow: 0 16px 34px rgba(28, 23, 18, 0.14);
 }
-.gallery-grid img.gallery-wide { grid-column: 1 / -1; height: 460px; object-position: center 55%; }
-.reel-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  justify-items: center;
+.reel-page::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  width: 64px;
+  height: 16px;
+  transform: translateX(-50%);
+  background: rgba(245, 197, 24, 0.78);
 }
-.reel-grid .instagram-media {
+.reel-page > span {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.85rem;
+  font-family: "Caveat", cursive;
+  font-size: 1.7rem;
+  color: var(--pomegranate);
+}
+.reel-page:nth-child(odd) { transform: rotate(-1.3deg); }
+.reel-page:nth-child(even) { transform: rotate(1.3deg); margin-top: 1.1rem; }
+.reel-page:hover { transform: rotate(0deg) translateY(-4px); z-index: 2; }
+.reel-page .instagram-media {
   width: 100% !important;
   min-width: 0 !important;
-  max-width: 540px !important;
+  max-width: none !important;
   margin: 0 !important;
 }
 
@@ -448,8 +550,12 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(245, 197, 24
   }
   .nav.is-open { display: flex; }
   .nav.is-open .nav-cta { display: inline-flex; }
-  .hero, .about, .cards, .menu-grid, .step-row, .stats, .contact-card, .order-form, .years, .gallery-grid, .reel-grid { grid-template-columns: 1fr; }
-  .gallery-grid img.gallery-wide { height: 280px; }
+  .hero, .about, .cards, .menu-grid, .step-row, .stats, .contact-card, .order-form, .years, .collage, .reel-album { grid-template-columns: 1fr; }
+  .collage { grid-template-rows: none; }
+  .shot, .shot-villa, .reel-page, .reel-page:nth-child(even) { transform: none; margin: 0; height: auto; grid-row: auto; }
+  .shot img { height: 260px; flex: none; }
+  .album-head { flex-direction: column; align-items: flex-start; }
+  .album-stamp { display: none; }
   .years img { height: 320px; }
   .hero-visual { min-height: 0; }
   .hero-visual img { width: 100%; height: 320px; margin: 0; }
@@ -460,4 +566,5 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(245, 197, 24
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .shot, .shot:hover, .reel-page, .reel-page:hover { transform: none; }
 }
