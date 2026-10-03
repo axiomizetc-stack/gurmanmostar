@@ -1,6 +1,6 @@
 # Gurman Mostar
 
-Static website for Gurman, a catering and lunch-box kitchen in Mostar that delivers across Herzegovina.
+Static website for Gurman, a catering and lunch-box kitchen in Mostar. Delivery is in Mostar and the surrounding area. Orders from other towns are pickup.
 
 ## Preview locally
 
