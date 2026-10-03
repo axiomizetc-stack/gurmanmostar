@@ -45,7 +45,7 @@ const translations = {
     "services.1.title": "Bogate plate",
     "services.1.text": "Slane plate za stol koji izgleda svečano, a jede se opušteno. Sastav ide prema broju gostiju.",
     "services.2.title": "Domaća peciva",
-    "services.2.text": "Za doručak, kavu, slavlje ili poklon. Kažite koliko komada treba i kada.",
+    "services.2.text": "Za doručak, kafu, slavlje ili poklon. Kažite koliko komada treba i kada.",
     "services.3.title": "Lunch box",
     "services.3.text": "Pakirani obroci za urede, ekipe i dane bez vremena za stol. Svježe i spremno za jelo.",
     "services.4.title": "Privatne i poslovne proslave",
