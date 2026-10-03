@@ -19,10 +19,59 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   color: var(--ink);
-  background: var(--white);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(245, 197, 24, 0.22), transparent 28%),
+    radial-gradient(circle at 92% 18%, rgba(27, 122, 69, 0.08), transparent 24%),
+    linear-gradient(180deg, #fff8e4 0%, #fff3d0 42%, #fff8e8 100%);
   font-family: var(--font);
   font-size: 16px;
   line-height: 1.6;
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.wash {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.wash-a {
+  width: 420px;
+  height: 420px;
+  top: -80px;
+  right: -60px;
+  background: rgba(245, 197, 24, 0.28);
+}
+
+.wash-b {
+  width: 320px;
+  height: 320px;
+  bottom: 12%;
+  left: -90px;
+  background: rgba(245, 197, 24, 0.16);
+}
+
+.dotfield {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  background-image: radial-gradient(circle, rgba(226, 176, 0, 0.55) 1px, transparent 1.2px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 72%);
+}
+
+.site-header,
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
@@ -44,7 +93,7 @@ p { margin: 0; }
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 248, 232, 0.88);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -281,7 +330,7 @@ h1 { font-size: clamp(2.6rem, 5vw, 4.4rem); font-weight: 800; max-width: 11ch; }
   font-size: 0.85rem;
 }
 
-.steps { background: white; }
+.steps { background: transparent; }
 .step-row { grid-template-columns: repeat(3, 1fr); }
 .step-row article {
   background: var(--cream);
@@ -545,11 +594,16 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(245, 197, 24
     align-items: flex-start;
     gap: 0.8rem;
     padding: 1rem 1.25rem 1.25rem;
-    background: white;
+    background: #fff8e4;
     border-bottom: 1px solid var(--line);
   }
   .nav.is-open { display: flex; }
   .nav.is-open .nav-cta { display: inline-flex; }
+  .page-bg .wash-a,
+  .page-bg .wash-b {
+    width: 240px;
+    height: 240px;
+  }
   .hero, .about, .cards, .menu-grid, .step-row, .stats, .contact-card, .order-form, .years, .collage, .reel-album { grid-template-columns: 1fr; }
   .collage { grid-template-rows: none; }
   .shot, .shot-villa, .reel-page, .reel-page:nth-child(even) { transform: none; margin: 0; height: auto; grid-row: auto; }
