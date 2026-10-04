@@ -1,8 +1,8 @@
 const translations = {
   bs: {
-    "meta.title": "Gurman Mostar | Catering i lunch box",
+    "meta.title": "Catering Mostar | Gurman — hrana, plate i lunch box",
     "meta.description":
-      "Gurman iz Mostara priprema catering, bogate plate, domaća peciva i lunch box. Dostava je u Mostaru i okolici. WhatsApp +387 62 876 070.",
+      "Catering i dostava hrane u Mostaru. Gurman sprema plate, peciva i lunch box za proslave i firme. Dostava u Mostaru i okolici. WhatsApp +387 62 876 070.",
     skip: "Preskoči na sadržaj",
     "nav.menu": "Meni",
     "nav.about": "O nama",
@@ -12,9 +12,9 @@ const translations = {
     "nav.contact": "Kontakt",
     "nav.order": "Naruči",
     "hero.pill": "Catering i lunch box · Mostar",
-    "hero.title": "Svježa hrana za vaš poseban dan.",
+    "hero.title": "Catering i svježa hrana u Mostaru.",
     "hero.lead":
-      "Od bogatih plata do mirisnih domaćih peciva, Gurman priprema ukusne zalogaje za sve vaše proslave i porodična okupljanja u Mostaru i okolici.",
+      "Gurman je catering iz Mostara: plate, peciva i lunch box za proslave, firme i porodična okupljanja. Dostava hrane je u Mostaru i okolici.",
     "hero.primary": "Naruči sada",
     "hero.point1": "Meni po dogovoru",
     "hero.point2": "Dostava u Mostaru i okolici",
@@ -40,8 +40,8 @@ const translations = {
     "about.quote":
       "Kuhinja je naše sretno mjesto, a tu sreću dijelimo s vama kroz svaki zalogaj. Od bogatih plata do mirisnih domaćih peciva, tu smo da vaše proslave učinimo posebnim.",
     "services.kicker": "Usluge",
-    "services.title": "Šta možete naručiti",
-    "services.lead": "Četiri stvari koje stalno izlaze iz kuhinje. Recite nam prigodu, pa složimo baš to.",
+    "services.title": "Catering, plate i lunch box",
+    "services.lead": "Hrana za Mostar i okolicu. Recite nam prigodu, pa složimo baš to.",
     "services.1.title": "Bogate plate",
     "services.1.text": "Slane plate za stol koji izgleda svečano, a jede se opušteno. Sastav ide prema broju gostiju.",
     "services.2.title": "Domaća peciva",
@@ -101,6 +101,8 @@ const translations = {
     "faq.2.a": "Za proslave što ranije, posebno vikendom. Za lunch box pitajte prvi slobodan termin.",
     "faq.3.q": "Dostavljate li izvan Mostara?",
     "faq.3.a": "Dostava vrijedi za Mostar i okolicu. Za druge gradove potrebno je doći lično po hranu.",
+    "faq.4.q": "Radite li catering i dostavu hrane u Mostaru?",
+    "faq.4.a": "Da. Gurman je catering iz Mostara. Hranu dostavljamo u gradu i okolici.",
     "contact.kicker": "Narudžba",
     "contact.title": "Recite nam šta treba na stolu.",
     "contact.text": "Obrazac otvara WhatsApp s već napisanom porukom. Možete i odmah nazvati.",
@@ -141,9 +143,9 @@ const translations = {
     "float.aria": "Pišite na WhatsApp",
   },
   en: {
-    "meta.title": "Gurman Mostar | Catering and lunch boxes across Herzegovina",
+    "meta.title": "Catering Mostar | Gurman — food, platters and lunch boxes",
     "meta.description":
-      "Gurman in Mostar prepares catering, sharing platters, homemade pastries and lunch boxes. Delivery is in Mostar and the surrounding area. WhatsApp +387 62 876 070.",
+      "Catering and food delivery in Mostar. Gurman prepares platters, pastries and lunch boxes for celebrations and offices. Delivery in Mostar and nearby. WhatsApp +387 62 876 070.",
     skip: "Skip to content",
     "nav.menu": "Menu",
     "nav.about": "About",
@@ -153,9 +155,9 @@ const translations = {
     "nav.contact": "Contact",
     "nav.order": "Order",
     "hero.pill": "Catering and lunch box · Mostar",
-    "hero.title": "Fresh food for your special day.",
+    "hero.title": "Catering and fresh food in Mostar.",
     "hero.lead":
-      "From generous platters to fragrant homemade pastries, Gurman prepares tasty bites for all your celebrations and family gatherings in Mostar and the surrounding area.",
+      "Gurman is a Mostar catering kitchen: platters, pastries and lunch boxes for celebrations, offices and family gatherings. Food delivery is in Mostar and nearby.",
     "hero.primary": "Order now",
     "hero.point1": "Menu by arrangement",
     "hero.point2": "Delivery in Mostar and nearby",
@@ -181,8 +183,8 @@ const translations = {
     "about.quote":
       "The kitchen is our happy place, and we share that happiness with you in every bite. From generous platters to fragrant homemade pastries, we are here to make your celebrations special.",
     "services.kicker": "Services",
-    "services.title": "What you can order",
-    "services.lead": "Four things that leave the kitchen all the time. Tell us the occasion and we will build it.",
+    "services.title": "Catering, platters and lunch boxes",
+    "services.lead": "Food for Mostar and nearby. Tell us the occasion and we will build it.",
     "services.1.title": "Sharing platters",
     "services.1.text": "Savoury boards for a table that looks festive and is easy to share. Built around your guest count.",
     "services.2.title": "Homemade pastries",
@@ -242,6 +244,8 @@ const translations = {
     "faq.2.a": "For celebrations, the earlier the better, especially on weekends. For lunch boxes, ask for the next free slot.",
     "faq.3.q": "Do you deliver outside Mostar?",
     "faq.3.a": "Delivery covers Mostar and the surrounding area. From other towns, you need to come and pick the food up.",
+    "faq.4.q": "Do you offer catering and food delivery in Mostar?",
+    "faq.4.a": "Yes. Gurman is a catering kitchen in Mostar. We deliver food in the city and nearby.",
     "contact.kicker": "Order",
     "contact.title": "Tell us what should be on the table.",
     "contact.text": "The form opens WhatsApp with your message already written. You can also call straight away.",
@@ -296,6 +300,12 @@ function applyLanguage(lang) {
   document.documentElement.lang = lang === "en" ? "en" : "bs";
   document.title = pack["meta.title"];
   document.querySelector('meta[name="description"]').setAttribute("content", pack["meta.description"]);
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  const ogDescription = document.querySelector('meta[property="og:description"]');
+  const ogLocale = document.querySelector('meta[property="og:locale"]');
+  if (ogTitle) ogTitle.setAttribute("content", pack["meta.title"]);
+  if (ogDescription) ogDescription.setAttribute("content", pack["meta.description"]);
+  if (ogLocale) ogLocale.setAttribute("content", lang === "en" ? "en_US" : "bs_BA");
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = pack[node.dataset.i18n];
