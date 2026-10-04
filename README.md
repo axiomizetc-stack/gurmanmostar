@@ -16,6 +16,6 @@ Repository: https://github.com/axiomizetc-stack/gurmanmostar
 
 1. In the repository, open **Settings → Pages**.
 2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-3. The site is published at https://axiomizetc-stack.github.io/gurmanmostar/
+3. The site is published at https://gurman-mostar.com
 
 The phone number, Instagram and Facebook links are the public ones from the Gurman Mostar page.
