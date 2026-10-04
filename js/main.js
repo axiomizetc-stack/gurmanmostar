@@ -140,6 +140,7 @@ const translations = {
       message: "Poruka",
     },
     "footer.note": "Catering i lunch box · Mostar i okolica",
+    "built.by": "Napravio Alpha IT Solutions",
     "float.aria": "Pišite na WhatsApp",
   },
   en: {
@@ -283,6 +284,7 @@ const translations = {
       message: "Message",
     },
     "footer.note": "Catering and lunch box · Mostar and nearby",
+    "built.by": "Built by Alpha IT Solutions",
     "float.aria": "Message on WhatsApp",
   },
 };
