@@ -36,7 +36,7 @@ const translations = {
     "about.check3": "Sastav i cijenu dogovaramo prije kuhanja",
     "about.check4": "Jedna poruka na WhatsApp je dovoljna za početak",
     "about.cta": "Zatraži ponudu",
-    "about.alt": "Gurman catering Mostar, kuhinja u Hercegovini",
+    "about.alt": "Tim Gurmana, Mostar",
     "about.quote":
       "Kuhinja je naše sretno mjesto, a tu sreću dijelimo s vama kroz svaki zalogaj. Od bogatih plata do mirisnih domaćih peciva, tu smo da vaše proslave učinimo posebnim.",
     "services.kicker": "Usluge",
@@ -184,7 +184,7 @@ const translations = {
     "about.check3": "The menu and price are agreed before we cook",
     "about.check4": "One WhatsApp message is enough to start",
     "about.cta": "Request a quote",
-    "about.alt": "Gurman catering Mostar, a kitchen in Herzegovina",
+    "about.alt": "The Gurman team, Mostar",
     "about.quote":
       "The kitchen is our happy place, and we share that happiness with you in every bite. From generous platters to fragrant homemade pastries, we are here to make your celebrations special.",
     "services.kicker": "Services",
