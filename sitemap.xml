@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://gurman-mostar.com/</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://gurman-mostar.com/images/spread.jpg</image:loc>
+      <image:title>Gurman Mostar catering, plate i lunch box</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gurman-mostar.com/images/platter.jpg</image:loc>
+      <image:title>Gurman plata Mostar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gurman-mostar.com/images/about.jpg</image:loc>
+      <image:title>Gurman kuhinja Mostar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gurman-mostar.com/images/logo.jpg</image:loc>
+      <image:title>Gurman Mostar logo</image:title>
+    </image:image>
   </url>
 </urlset>

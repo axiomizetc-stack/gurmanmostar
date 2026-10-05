@@ -1,8 +1,8 @@
 const translations = {
   bs: {
-    "meta.title": "Catering Mostar | Gurman — hrana, plate i lunch box",
+    "meta.title": "Catering Mostar | Gurman — ketering i lunch box u Hercegovini",
     "meta.description":
-      "Catering i dostava hrane u Mostaru. Gurman sprema plate, peciva i lunch box za proslave i firme. Dostava u Mostaru i okolici. WhatsApp +387 62 876 070.",
+      "Gurman je catering iz Mostara. Plate, peciva i lunch box za proslave i firme. Dostava hrane u Mostaru i okolici, lično preuzimanje iz Hercegovine. WhatsApp +387 62 876 070.",
     skip: "Preskoči na sadržaj",
     "nav.menu": "Meni",
     "nav.about": "O nama",
@@ -11,10 +11,10 @@ const translations = {
     "nav.area": "Područje",
     "nav.contact": "Kontakt",
     "nav.order": "Naruči",
-    "hero.pill": "Catering i lunch box · Mostar",
-    "hero.title": "Catering i svježa hrana u Mostaru.",
+    "hero.pill": "Catering i lunch box · Mostar i Hercegovina",
+    "hero.title": "Catering i svježa hrana u Mostaru i Hercegovini.",
     "hero.lead":
-      "Gurman je catering iz Mostara: plate, peciva i lunch box za proslave, firme i porodična okupljanja. Dostava hrane je u Mostaru i okolici.",
+      "Gurman je catering iz Mostara, iz srca Hercegovine: plate, peciva i lunch box za proslave, firme i porodična okupljanja. Dostava hrane je u Mostaru i okolici. Iz ostalih hercegovačkih mjesta hranu preuzimate lično.",
     "hero.primary": "Naruči sada",
     "hero.point1": "Meni po dogovoru",
     "hero.point2": "Dostava u Mostaru i okolici",
@@ -28,20 +28,20 @@ const translations = {
     "stats.3title": "3 godine",
     "stats.3": "Gurman u Mostaru",
     "about.kicker": "O nama",
-    "about.title": "Kuhinja je naše sretno mjesto.",
+    "about.title": "Kuhinja iz Mostara, za Hercegovinu.",
     "about.text":
-      "Tu sreću dijelimo kroz svaki zalogaj. Od bogatih plata do mirisnih domaćih peciva, tu smo da proslave, ručkove i radne dane učinimo ukusnijim.",
+      "Gurman kuha u Mostaru već tri godine. Od bogatih plata do mirisnih peciva i lunch boxa, tu smo za proslave, ručkove i radne dane u Mostaru i Hercegovini.",
     "about.check1": "Plate, peciva, lunch box i cijeli catering",
     "about.check2": "Dostava u Mostaru i okolici, iz drugih gradova lično preuzimanje",
     "about.check3": "Sastav i cijenu dogovaramo prije kuhanja",
     "about.check4": "Jedna poruka na WhatsApp je dovoljna za početak",
     "about.cta": "Zatraži ponudu",
-    "about.alt": "Gurman, Mostar",
+    "about.alt": "Gurman catering Mostar, kuhinja u Hercegovini",
     "about.quote":
       "Kuhinja je naše sretno mjesto, a tu sreću dijelimo s vama kroz svaki zalogaj. Od bogatih plata do mirisnih domaćih peciva, tu smo da vaše proslave učinimo posebnim.",
     "services.kicker": "Usluge",
-    "services.title": "Catering, plate i lunch box",
-    "services.lead": "Hrana za Mostar i okolicu. Recite nam prigodu, pa složimo baš to.",
+    "services.title": "Catering Mostar: plate i lunch box",
+    "services.lead": "Hrana za Mostar, okolicu i cijelu Hercegovinu. Recite nam prigodu, pa složimo baš to.",
     "services.1.title": "Bogate plate",
     "services.1.text": "Slane plate za stol koji izgleda svečano, a jede se opušteno. Sastav ide prema broju gostiju.",
     "services.2.title": "Domaća peciva",
@@ -71,9 +71,11 @@ const translations = {
     "how.2.text": "Predložimo jela i cijenu. Ništa ne kreće dok vi ne potvrdite.",
     "how.3.title": "Dostavimo",
     "how.3.text": "U Mostaru i okolici hranu dostavljamo. Iz drugih gradova dolazite lično po nju.",
-    "area.kicker": "Područje",
-    "area.title": "Dostava je u Mostaru i okolici.",
-    "area.text": "Hranu dovozimo na adresu u Mostaru i okolnim naseljima. Za upite iz drugih gradova potrebno je doći lično po hranu.",
+    "area.kicker": "Mostar i Hercegovina",
+    "area.title": "Dostava Mostar. Preuzimanje za Hercegovinu.",
+    "area.text": "Hranu dovozimo na adresu u Mostaru i okolnim naseljima. Iz Čitluka, Međugorja, Širokog Brijega, Čapljine i ostalih hercegovačkih mjesta dođite lično po nju.",
+    "area.deliverTitle": "Dostava",
+    "area.pickupTitle": "Lično preuzimanje",
     "years.kicker": "3 godine",
     "years.title": "Tri godine za stolom s vama.",
     "years.text": "Gurman je u Mostaru već tri godine. I dalje kuhamo plate, peciva i lunch box, i dostavljamo ih u gradu i okolici.",
@@ -103,6 +105,8 @@ const translations = {
     "faq.3.a": "Dostava vrijedi za Mostar i okolicu. Za druge gradove potrebno je doći lično po hranu.",
     "faq.4.q": "Radite li catering i dostavu hrane u Mostaru?",
     "faq.4.a": "Da. Gurman je catering iz Mostara. Hranu dostavljamo u gradu i okolici.",
+    "faq.5.q": "Radite li catering u Hercegovini?",
+    "faq.5.a": "Da. Gurman je catering iz Mostara, iz srca Hercegovine. Dostavljamo u Mostaru i okolici. Za Čitluk, Međugorje, Široki Brijeg, Čapljinu i ostala mjesta hranu preuzimate lično.",
     "contact.kicker": "Narudžba",
     "contact.title": "Recite nam šta treba na stolu.",
     "contact.text": "Obrazac otvara WhatsApp s već napisanom porukom. Možete i odmah nazvati.",
@@ -139,14 +143,14 @@ const translations = {
       guests: "Broj osoba",
       message: "Poruka",
     },
-    "footer.note": "Catering i lunch box · Mostar i okolica",
+    "footer.note": "Catering i lunch box · Mostar · Hercegovina",
     "built.by": "Napravio Alpha IT Solutions",
     "float.aria": "Pišite na WhatsApp",
   },
   en: {
-    "meta.title": "Catering Mostar | Gurman — food, platters and lunch boxes",
+    "meta.title": "Catering Mostar | Gurman — catering and lunch boxes in Herzegovina",
     "meta.description":
-      "Catering and food delivery in Mostar. Gurman prepares platters, pastries and lunch boxes for celebrations and offices. Delivery in Mostar and nearby. WhatsApp +387 62 876 070.",
+      "Gurman is a catering kitchen in Mostar. Platters, pastries and lunch boxes for celebrations and offices. Delivery in Mostar and nearby, pickup from Herzegovina. WhatsApp +387 62 876 070.",
     skip: "Skip to content",
     "nav.menu": "Menu",
     "nav.about": "About",
@@ -155,10 +159,10 @@ const translations = {
     "nav.area": "Area",
     "nav.contact": "Contact",
     "nav.order": "Order",
-    "hero.pill": "Catering and lunch box · Mostar",
-    "hero.title": "Catering and fresh food in Mostar.",
+    "hero.pill": "Catering and lunch box · Mostar and Herzegovina",
+    "hero.title": "Catering and fresh food in Mostar and Herzegovina.",
     "hero.lead":
-      "Gurman is a Mostar catering kitchen: platters, pastries and lunch boxes for celebrations, offices and family gatherings. Food delivery is in Mostar and nearby.",
+      "Gurman is a catering kitchen in Mostar, in the heart of Herzegovina: platters, pastries and lunch boxes for celebrations, offices and family gatherings. We deliver in Mostar and nearby. From other Herzegovina towns you pick the food up in person.",
     "hero.primary": "Order now",
     "hero.point1": "Menu by arrangement",
     "hero.point2": "Delivery in Mostar and nearby",
@@ -172,20 +176,20 @@ const translations = {
     "stats.3title": "3 years",
     "stats.3": "Gurman in Mostar",
     "about.kicker": "About",
-    "about.title": "The kitchen is our happy place.",
+    "about.title": "A Mostar kitchen, for Herzegovina.",
     "about.text":
-      "We share that happiness in every bite. From generous platters to fragrant homemade pastries, we are here to make celebrations, lunches and workdays taste better.",
+      "Gurman has been cooking in Mostar for three years. From generous platters to homemade pastries and lunch boxes, we cook for celebrations, lunches and workdays in Mostar and Herzegovina.",
     "about.check1": "Platters, pastries, lunch boxes and full catering",
     "about.check2": "Delivery in Mostar and nearby. Other towns pick up in person",
     "about.check3": "The menu and price are agreed before we cook",
     "about.check4": "One WhatsApp message is enough to start",
     "about.cta": "Request a quote",
-    "about.alt": "Gurman, Mostar",
+    "about.alt": "Gurman catering Mostar, a kitchen in Herzegovina",
     "about.quote":
       "The kitchen is our happy place, and we share that happiness with you in every bite. From generous platters to fragrant homemade pastries, we are here to make your celebrations special.",
     "services.kicker": "Services",
-    "services.title": "Catering, platters and lunch boxes",
-    "services.lead": "Food for Mostar and nearby. Tell us the occasion and we will build it.",
+    "services.title": "Mostar catering: platters and lunch boxes",
+    "services.lead": "Food for Mostar, nearby towns and the rest of Herzegovina. Tell us the occasion and we will build it.",
     "services.1.title": "Sharing platters",
     "services.1.text": "Savoury boards for a table that looks festive and is easy to share. Built around your guest count.",
     "services.2.title": "Homemade pastries",
@@ -215,9 +219,11 @@ const translations = {
     "how.2.text": "We suggest the food and the price. Nothing starts until you confirm.",
     "how.3.title": "We deliver",
     "how.3.text": "We deliver in Mostar and the surrounding area. From other towns, you come and pick the food up.",
-    "area.kicker": "Area",
-    "area.title": "Delivery is in Mostar and nearby.",
-    "area.text": "We bring the food to an address in Mostar and the surrounding settlements. Orders from other towns are collected in person.",
+    "area.kicker": "Mostar and Herzegovina",
+    "area.title": "Delivery in Mostar. Pickup for Herzegovina.",
+    "area.text": "We bring the food to an address in Mostar and nearby settlements. From Čitluk, Međugorje, Široki Brijeg, Čapljina and other Herzegovina towns, you pick it up in person.",
+    "area.deliverTitle": "Delivery",
+    "area.pickupTitle": "Pickup in person",
     "years.kicker": "3 years",
     "years.title": "Three years at the table with you.",
     "years.text": "Gurman has been in Mostar for three years. We still cook platters, pastries and lunch boxes, and deliver them in the city and nearby.",
@@ -247,6 +253,8 @@ const translations = {
     "faq.3.a": "Delivery covers Mostar and the surrounding area. From other towns, you need to come and pick the food up.",
     "faq.4.q": "Do you offer catering and food delivery in Mostar?",
     "faq.4.a": "Yes. Gurman is a catering kitchen in Mostar. We deliver food in the city and nearby.",
+    "faq.5.q": "Do you offer catering in Herzegovina?",
+    "faq.5.a": "Yes. Gurman is based in Mostar, in the heart of Herzegovina. We deliver in Mostar and nearby. From Čitluk, Međugorje, Široki Brijeg, Čapljina and other towns you pick the food up in person.",
     "contact.kicker": "Order",
     "contact.title": "Tell us what should be on the table.",
     "contact.text": "The form opens WhatsApp with your message already written. You can also call straight away.",
@@ -283,7 +291,7 @@ const translations = {
       guests: "People",
       message: "Message",
     },
-    "footer.note": "Catering and lunch box · Mostar and nearby",
+    "footer.note": "Catering and lunch box · Mostar · Herzegovina",
     "built.by": "Built by Alpha IT Solutions",
     "float.aria": "Message on WhatsApp",
   },
@@ -305,9 +313,13 @@ function applyLanguage(lang) {
   const ogTitle = document.querySelector('meta[property="og:title"]');
   const ogDescription = document.querySelector('meta[property="og:description"]');
   const ogLocale = document.querySelector('meta[property="og:locale"]');
+  const twTitle = document.querySelector('meta[name="twitter:title"]');
+  const twDescription = document.querySelector('meta[name="twitter:description"]');
   if (ogTitle) ogTitle.setAttribute("content", pack["meta.title"]);
   if (ogDescription) ogDescription.setAttribute("content", pack["meta.description"]);
   if (ogLocale) ogLocale.setAttribute("content", lang === "en" ? "en_US" : "bs_BA");
+  if (twTitle) twTitle.setAttribute("content", pack["meta.title"]);
+  if (twDescription) twDescription.setAttribute("content", pack["meta.description"]);
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = pack[node.dataset.i18n];

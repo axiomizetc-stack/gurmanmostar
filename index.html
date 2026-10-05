@@ -3,25 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Catering Mostar | Gurman — hrana, plate i lunch box</title>
+    <title>Catering Mostar | Gurman — ketering i lunch box u Hercegovini</title>
     <meta
       name="description"
-      content="Catering i dostava hrane u Mostaru. Gurman sprema plate, peciva i lunch box za proslave i firme. Dostava u Mostaru i okolici. WhatsApp +387 62 876 070."
+      content="Gurman je catering iz Mostara. Plate, peciva i lunch box za proslave i firme. Dostava hrane u Mostaru i okolici, lično preuzimanje iz Hercegovine. WhatsApp +387 62 876 070."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Gurman Mostar" />
+    <meta name="geo.region" content="BA" />
+    <meta name="geo.placename" content="Mostar, Herzegovina" />
+    <meta name="geo.position" content="43.3438;17.8078" />
+    <meta name="ICBM" content="43.3438, 17.8078" />
     <link rel="canonical" href="https://gurman-mostar.com/" />
+    <link rel="alternate" hreflang="bs" href="https://gurman-mostar.com/" />
+    <link rel="alternate" hreflang="en" href="https://gurman-mostar.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://gurman-mostar.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="bs_BA" />
+    <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:site_name" content="Gurman Mostar" />
-    <meta property="og:title" content="Catering Mostar | Gurman — hrana, plate i lunch box" />
+    <meta property="og:title" content="Catering Mostar | Gurman — ketering i lunch box u Hercegovini" />
     <meta
       property="og:description"
-      content="Catering i dostava hrane u Mostaru. Gurman sprema plate, peciva i lunch box za proslave i firme. Dostava u Mostaru i okolici."
+      content="Catering i dostava hrane u Mostaru. Plate, peciva i lunch box. Lično preuzimanje iz Hercegovine. WhatsApp +387 62 876 070."
     />
     <meta property="og:url" content="https://gurman-mostar.com/" />
     <meta property="og:image" content="https://gurman-mostar.com/images/spread.jpg" />
+    <meta property="og:image:alt" content="Gurman Mostar catering, plate i lunch box" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Catering Mostar | Gurman — ketering i lunch box u Hercegovini" />
+    <meta
+      name="twitter:description"
+      content="Catering i dostava hrane u Mostaru. Plate, peciva i lunch box. Lično preuzimanje iz Hercegovine."
+    />
+    <meta name="twitter:image" content="https://gurman-mostar.com/images/spread.jpg" />
     <meta name="theme-color" content="#F5C518" />
     <link rel="icon" href="images/logo.jpg" />
+    <link rel="apple-touch-icon" href="images/logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,20 +52,53 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": ["FoodEstablishment", "CateringService"],
+            "@type": ["FoodEstablishment", "CateringService", "LocalBusiness"],
             "@id": "https://gurman-mostar.com/#business",
             "name": "Gurman Mostar",
+            "alternateName": ["Gurman", "Gurman Catering", "Gurman Lunch Box", "Ketering Mostar"],
             "url": "https://gurman-mostar.com/",
-            "description": "Catering i dostava hrane u Mostaru. Plate, peciva i lunch box. Dostava u Mostaru i okolici.",
+            "description": "Catering iz Mostara za Hercegovinu. Plate, peciva i lunch box. Dostava u Mostaru i okolici, lično preuzimanje iz ostalih hercegovačkih mjesta.",
             "telephone": "+38762876070",
-            "image": "https://gurman-mostar.com/images/spread.jpg",
+            "image": [
+              "https://gurman-mostar.com/images/spread.jpg",
+              "https://gurman-mostar.com/images/platter.jpg",
+              "https://gurman-mostar.com/images/logo.jpg"
+            ],
+            "logo": "https://gurman-mostar.com/images/logo.jpg",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Mostar",
+              "addressRegion": "Hercegovačko-neretvanski kanton",
               "addressCountry": "BA"
             },
-            "areaServed": ["Mostar", "Blagaj", "Buna", "Ortiješ", "Rodoč", "Vrapčići", "Potoci", "Ilići"],
-            "servesCuisine": "Bosnian",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 43.3438,
+              "longitude": 17.8078
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Mostar" },
+              { "@type": "AdministrativeArea", "name": "Herzegovina" },
+              { "@type": "AdministrativeArea", "name": "Hercegovačko-neretvanski kanton" }
+            ],
+            "servesCuisine": ["Bosnian", "Balkan"],
+            "availableLanguage": ["Bosnian", "English"],
+            "currenciesAccepted": "BAM",
+            "paymentAccepted": "Cash, Bank Transfer",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Gurman usluge",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Catering za proslave u Mostaru", "areaServed": "Mostar" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lunch box Mostar", "areaServed": "Mostar" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Plate i peciva", "areaServed": "Herzegovina" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dostava hrane Mostar", "areaServed": "Mostar" } }
+              ]
+            },
+            "potentialAction": {
+              "@type": "OrderAction",
+              "target": "https://wa.me/38762876070"
+            },
             "sameAs": [
               "https://www.instagram.com/gurman_mostar/",
               "https://www.facebook.com/p/Gurman-Mostar-Catering-Lunch-Box-61572129862219/"
@@ -58,7 +109,26 @@
             "@id": "https://gurman-mostar.com/#website",
             "url": "https://gurman-mostar.com/",
             "name": "Gurman Mostar",
-            "inLanguage": "bs"
+            "inLanguage": ["bs", "en"],
+            "publisher": { "@id": "https://gurman-mostar.com/#business" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://gurman-mostar.com/#webpage",
+            "url": "https://gurman-mostar.com/",
+            "name": "Catering Mostar | Gurman — ketering i lunch box u Hercegovini",
+            "isPartOf": { "@id": "https://gurman-mostar.com/#website" },
+            "about": { "@id": "https://gurman-mostar.com/#business" },
+            "inLanguage": "bs",
+            "primaryImageOfPage": "https://gurman-mostar.com/images/spread.jpg"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://gurman-mostar.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Catering Mostar", "item": "https://gurman-mostar.com/#usluge" },
+              { "@type": "ListItem", "position": 3, "name": "Područje Hercegovina", "item": "https://gurman-mostar.com/#podrucje" }
+            ]
           },
           {
             "@type": "FAQPage",
@@ -69,6 +139,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Da. Gurman je catering iz Mostara. Hranu dostavljamo u gradu i okolici. Iz drugih gradova potrebno je doći lično po nju."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Radite li catering u Hercegovini?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Da. Gurman je catering iz Mostara, iz srca Hercegovine. Dostavljamo u Mostaru i okolici. Za Čitluk, Međugorje, Široki Brijeg, Čapljinu, Stolac, Jablanicu i ostala mjesta hranu preuzimate lično."
                 }
               },
               {
@@ -130,10 +208,10 @@
     <main id="sadrzaj">
       <section class="hero" id="vrh">
         <div class="hero-copy">
-          <p class="pill" data-i18n="hero.pill">Catering &amp; lunch box · Mostar</p>
-          <h1 data-i18n="hero.title">Catering i svježa hrana u Mostaru.</h1>
+          <p class="pill" data-i18n="hero.pill">Catering i lunch box · Mostar i Hercegovina</p>
+          <h1 data-i18n="hero.title">Catering i svježa hrana u Mostaru i Hercegovini.</h1>
           <p class="lead" data-i18n="hero.lead">
-            Gurman je catering iz Mostara: plate, peciva i lunch box za proslave, firme i porodična okupljanja. Dostava hrane je u Mostaru i okolici.
+            Gurman je catering iz Mostara, iz srca Hercegovine: plate, peciva i lunch box za proslave, firme i porodična okupljanja. Dostava hrane je u Mostaru i okolici. Iz ostalih hercegovačkih mjesta hranu preuzimate lično.
           </p>
           <div class="actions">
             <a class="btn btn-yellow" href="#kontakt" data-i18n="hero.primary">Naruči sada</a>
@@ -173,13 +251,13 @@
 
       <section class="section about" id="o-nama">
         <div class="about-photo">
-          <img src="images/about.jpg" alt="Gurman, Mostar" data-i18n-alt="about.alt" />
+          <img src="images/about.jpg" alt="Gurman catering Mostar, kuhinja u Hercegovini" data-i18n-alt="about.alt" />
         </div>
         <div>
           <p class="eyebrow" data-i18n="about.kicker">O nama</p>
-          <h2 data-i18n="about.title">Kuhinja je naše sretno mjesto.</h2>
+          <h2 data-i18n="about.title">Kuhinja iz Mostara, za Hercegovinu.</h2>
           <p data-i18n="about.text">
-            Tu sreću dijelimo kroz svaki zalogaj. Od bogatih plata do mirisnih domaćih peciva, tu smo da proslave, ručkove i radne dane učinimo ukusnijim.
+            Gurman kuha u Mostaru već tri godine. Od bogatih plata do mirisnih peciva i lunch boxa, tu smo za proslave, ručkove i radne dane u Mostaru i Hercegovini.
           </p>
           <ul class="checks">
             <li data-i18n="about.check1">Plate, peciva, lunch box i cijeli catering</li>
@@ -194,8 +272,8 @@
       <section class="section services" id="usluge">
         <div class="section-head">
           <p class="eyebrow" data-i18n="services.kicker">Usluge</p>
-          <h2 data-i18n="services.title">Catering, plate i lunch box</h2>
-          <p data-i18n="services.lead">Hrana za Mostar i okolicu. Recite nam prigodu, pa složimo baš to.</p>
+          <h2 data-i18n="services.title">Catering Mostar: plate i lunch box</h2>
+          <p data-i18n="services.lead">Hrana za Mostar, okolicu i cijelu Hercegovinu. Recite nam prigodu, pa složimo baš to.</p>
         </div>
         <div class="cards">
           <article class="card">
@@ -281,20 +359,38 @@
 
       <section class="section area" id="podrucje">
         <div class="section-head">
-          <p class="eyebrow" data-i18n="area.kicker">Područje</p>
-          <h2 data-i18n="area.title">Dostava je u Mostaru i okolici.</h2>
-          <p data-i18n="area.text">Hranu dovozimo na adresu u Mostaru i okolnim naseljima. Za upite iz drugih gradova potrebno je doći lično po hranu.</p>
+          <p class="eyebrow" data-i18n="area.kicker">Mostar i Hercegovina</p>
+          <h2 data-i18n="area.title">Dostava Mostar. Preuzimanje za Hercegovinu.</h2>
+          <p data-i18n="area.text">Hranu dovozimo na adresu u Mostaru i okolnim naseljima. Iz Čitluka, Međugorja, Širokog Brijega, Čapljine i ostalih hercegovačkih mjesta dođite lično po nju.</p>
         </div>
-        <ul class="towns">
-          <li>Mostar</li>
-          <li>Blagaj</li>
-          <li>Buna</li>
-          <li>Ortiješ</li>
-          <li>Rodoč</li>
-          <li>Vrapčići</li>
-          <li>Potoci</li>
-          <li>Ilići</li>
-        </ul>
+        <div class="area-groups">
+          <div>
+            <h3 data-i18n="area.deliverTitle">Dostava</h3>
+            <ul class="towns">
+              <li>Mostar</li>
+              <li>Blagaj</li>
+              <li>Buna</li>
+              <li>Ortiješ</li>
+              <li>Rodoč</li>
+              <li>Vrapčići</li>
+              <li>Potoci</li>
+              <li>Ilići</li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-i18n="area.pickupTitle">Lično preuzimanje</h3>
+            <ul class="towns">
+              <li>Čitluk</li>
+              <li>Međugorje</li>
+              <li>Široki Brijeg</li>
+              <li>Čapljina</li>
+              <li>Stolac</li>
+              <li>Jablanica</li>
+              <li>Konjic</li>
+              <li>Ljubuški</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="section years" id="godine">
@@ -377,7 +473,7 @@
       </section>
 
       <section class="banner">
-        <img src="images/spread.jpg" alt="Gurman Mostar, catering i lunch box" />
+        <img src="images/spread.jpg" alt="Gurman Mostar catering, plate i lunch box za Hercegovinu" />
         <div class="banner-actions">
           <a class="btn btn-yellow" href="https://www.instagram.com/gurman_mostar/" target="_blank" rel="noopener noreferrer" data-i18n="photos.cta">Više na Instagramu</a>
         </div>
@@ -409,6 +505,10 @@
           <details>
             <summary data-i18n="faq.4.q">Radite li catering i dostavu hrane u Mostaru?</summary>
             <p data-i18n="faq.4.a">Da. Gurman je catering iz Mostara. Hranu dostavljamo u gradu i okolici.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.5.q">Radite li catering u Hercegovini?</summary>
+            <p data-i18n="faq.5.a">Da. Gurman je catering iz Mostara, iz srca Hercegovine. Dostavljamo u Mostaru i okolici. Za Čitluk, Međugorje, Široki Brijeg, Čapljinu i ostala mjesta hranu preuzimate lično.</p>
           </details>
         </div>
       </section>
@@ -487,7 +587,7 @@
         <img src="images/logo.jpg" alt="" />
         <div>
           <strong>Gurman</strong>
-          <p data-i18n="footer.note">Catering i lunch box · Mostar i okolica</p>
+          <p data-i18n="footer.note">Catering i lunch box · Mostar · Hercegovina</p>
         </div>
       </div>
       <div class="footer-links">

@@ -282,7 +282,7 @@ h1 { font-size: clamp(2.6rem, 5vw, 4.4rem); font-weight: 800; max-width: 11ch; }
 }
 
 .services { background: var(--cream); width: 100%; max-width: none; padding-inline: 0; }
-.services .section-head, .services .cards, .menu .section-head, .menu .menu-grid, .steps .section-head, .steps .step-row, .area .section-head, .area .towns, .faq .section-head, .faq .faq-list {
+.services .section-head, .services .cards, .menu .section-head, .menu .menu-grid, .steps .section-head, .steps .step-row, .area .section-head, .area .area-groups, .faq .section-head, .faq .faq-list {
   width: min(1180px, calc(100% - 40px));
   margin-inline: auto;
 }
@@ -368,6 +368,14 @@ h1 { font-size: clamp(2.6rem, 5vw, 4.4rem); font-weight: 800; max-width: 11ch; }
 .area { background: var(--green); color: white; width: 100%; max-width: none; border-radius: 0; }
 .area .eyebrow { color: var(--yellow); }
 .area .section-head p { color: rgba(255, 255, 255, 0.82); }
+.area-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+.area-groups h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
 .towns { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; padding: 0; margin: 0; }
 .towns li { background: rgba(255, 255, 255, 0.12); border-radius: 999px; padding: 0.45rem 0.85rem; font-weight: 600; }
 
@@ -615,7 +623,7 @@ input:focus, select:focus, textarea:focus { outline: 3px solid rgba(245, 197, 24
     width: 240px;
     height: 240px;
   }
-  .hero, .about, .cards, .menu-grid, .step-row, .stats, .contact-card, .order-form, .years, .collage, .reel-album { grid-template-columns: 1fr; }
+  .hero, .about, .cards, .menu-grid, .step-row, .stats, .contact-card, .order-form, .years, .collage, .reel-album, .area-groups { grid-template-columns: 1fr; }
   .collage { grid-template-rows: none; }
   .shot, .shot-villa, .reel-page, .reel-page:nth-child(even) { transform: none; margin: 0; height: auto; grid-row: auto; }
   .shot img { height: 260px; flex: none; }
