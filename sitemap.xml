@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://gurman-mostar.com/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -21,6 +21,10 @@
     <image:image>
       <image:loc>https://gurman-mostar.com/images/logo.jpg</image:loc>
       <image:title>Gurman Mostar logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gurman-mostar.com/favicon-512x512.png</image:loc>
+      <image:title>Gurman Mostar ikona</image:title>
     </image:image>
   </url>
 </urlset>
